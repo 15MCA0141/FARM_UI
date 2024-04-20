@@ -1,0 +1,42 @@
+<link href="https://fonts.googleapis.com/css?family=Megrim|Nunito+Sans:400,900" rel="stylesheet" />
+<link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png" />
+
+<title>Fresh Avocados 🥑 /// NODE FARM</title>
+
+<div class="container">
+    <h1>🌽 Node Farm 🥦</h1>
+    <a href="#" class="product__back">
+        <span class="emoji-left">👈</span>Back
+    </a>
+    <figure class="selectedProduct">
+        <div class="product__organic">
+            <h5>{{ selectedProduct.organic ? 'Organic' : 'Regular' }}</h5>
+        </div>
+   
+        <div class="product__hero">
+            <span class="product__emoji product__emoji--1">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--2">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--3">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--4">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--5">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--6">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--7">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--8">{{ selectedProduct.image }}</span>
+            <span class="product__emoji product__emoji--9">{{ selectedProduct.image }}</span>
+        </div>
+
+        <h2 class="product__name">{{ selectedProduct.productName }}</h2>
+        <div class="product__details">
+            <p><span class="emoji-left">🌍</span> {{ selectedProduct.from }} </p>
+            <p><span class="emoji-left">❤️</span> {{ selectedProduct.nutrients }} </p>
+            <p><span class="emoji-left">📦</span> {{ selectedProduct.quantity }} </p>
+            <p><span class="emoji-left">🏷</span> {{ selectedProduct.price }}₹ </p>
+        </div>
+
+        <a href="#" class="product__link">
+            <span class="emoji-left">🛒</span>
+            <span>Add to shopping card ({{ selectedProduct.price }}₹)</span>
+        </a>
+        <p class="product__description"> {{ selectedProduct.description }} </p>
+    </figure>
+</div>
